@@ -1,3 +1,6 @@
+## Agda tmp file
+*.agdai
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
