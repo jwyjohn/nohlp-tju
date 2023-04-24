@@ -291,3 +291,4 @@ record _⇔_ (A B : Set) : Set where
   { to    = λ x → _⇔_.to B⇔C (_⇔_.to A⇔B x)
   ; from  = λ x → _⇔_.from A⇔B (_⇔_.from B⇔C x)
   }
+
