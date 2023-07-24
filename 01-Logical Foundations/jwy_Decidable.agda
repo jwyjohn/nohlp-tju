@@ -289,4 +289,6 @@ True Q = T ⌊ Q ⌋
 False : ∀ {Q} → Dec (¬ Q) → Set
 False {Q} = λ x → Q
 
-
+toWitnessFalse : ∀ {A : Set} {D : Dec (¬ A)} → T ⌊ D ⌋ → (¬ A)
+toWitnessFalse {A} {yes x} tt  =  x
+toWitnessFalse {A} {no ¬x} ()
